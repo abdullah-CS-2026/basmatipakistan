@@ -1,8 +1,8 @@
 import React from 'react';
-import ExportStatsCard from './ExportStatsCard';
-import NutritionalCard from './NutritionalCard';
-import FeaturesBadge from './FeaturesBadge';
-import RiceCategories from './RiceCategories';
+import ExportStatsCard from '../components/ExportStatsCard';
+import NutritionalCard from '../components/NutritionalCard';
+import FeaturesBadge from '../components/FeaturesBadge';
+import RiceCategories from '../components/RiceCategories';
 
 const HeroSection = () => {
   return (
