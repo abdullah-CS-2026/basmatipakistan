@@ -4,7 +4,7 @@ const PopularProducts = () => {
   return (
     <section
       style={{
-        background: '#f5f5f5',
+        
         padding: '110px 0',
       }}
     >
@@ -75,20 +75,31 @@ const PopularProducts = () => {
     />
 
     {/* Hover Overlay */}
-    <div
+    <div 
       className="product-overlay"
-      style={{
-        position: 'absolute',
-        top: '-100%',
-        left: 0,
-        width: '100%',
-        height: '100%',
-        background: 'rgba(118,154,22,0.78)',
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-        transition: 'all 0.45s ease',
-      }}
+     style={{
+  position: 'absolute',
+  inset: 0,
+  background: 'rgba(118,154,22,0.78)',
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'center',
+  transform: 'translateY(-100%)',
+  transition: 'transform 0.45s ease',
+}}
+ref={(el) => {
+  if (el) {
+    const parent = el.parentElement;
+
+    parent.onmouseenter = () => {
+      el.style.transform = 'translateY(0)';
+    };
+
+    parent.onmouseleave = () => {
+      el.style.transform = 'translateY(-100%)';
+    };
+  }
+}}
     >
 
       <h3
@@ -109,28 +120,80 @@ const PopularProducts = () => {
 </div>
 
           {/* RIGHT CARD */}
-          <div className="col-lg-6">
+        {/* RIGHT CARD */}
+<div className="col-lg-6">
 
-            <div
-              style={{
-                borderRadius: '16px',
-                overflow: 'hidden',
-                height: '290px',
-                boxShadow: '0 12px 32px rgba(0,0,0,0.12)',
-              }}
-            >
-              <img
-                src="/Popular_Products/image2.png"
-                alt="Rice Farming"
-                style={{
-                  width: '100%',
-                  height: '100%',
-                  objectFit: 'cover',
-                }}
-              />
-            </div>
+  <div
+    className="product-card"
+    style={{
+      position: 'relative',
+      borderRadius: '16px',
+      overflow: 'hidden',
+      height: '290px',
+      boxShadow: '0 12px 32px rgba(0,0,0,0.12)',
+      cursor: 'pointer',
+    }}
+  >
 
-          </div>
+    {/* Original Image */}
+    <img
+      src="/Popular_Products/image2.png"
+      alt="Organic Basmati Rice"
+      style={{
+        width: '100%',
+        height: '100%',
+        objectFit: 'cover',
+        display: 'block',
+      }}
+    />
+
+    {/* Hover Overlay */}
+    <div
+      className="product-overlay"
+      style={{
+        position: 'absolute',
+        inset: 0,
+        background: 'rgba(118,154,22,0.78)',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        transform: 'translateY(-100%)',
+        transition: 'transform 0.45s ease',
+      }}
+      ref={(el) => {
+        if (el) {
+          const parent = el.parentElement;
+
+          parent.onmouseenter = () => {
+            el.style.transform = 'translateY(0)';
+          };
+
+          parent.onmouseleave = () => {
+            el.style.transform = 'translateY(-100%)';
+          };
+        }
+      }}
+    >
+
+      <h3
+        style={{
+          color: '#ffffff',
+          fontSize: '2.6rem',
+          fontWeight: '700',
+          margin: 0,
+          textAlign: 'center',
+          padding: '0 20px',
+          fontFamily: "'Nunito Sans', sans-serif",
+        }}
+      >
+        Organic Basmati Rice
+      </h3>
+
+    </div>
+
+  </div>
+
+</div>
 
         </div>
 

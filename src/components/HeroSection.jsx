@@ -1,8 +1,17 @@
 import React from 'react';
-import ExportStatsCard from '../components/ExportStatsCard';
-import NutritionalCard from '../components/NutritionalCard';
-import FeaturesBadge from '../components/FeaturesBadge';
-import RiceCategories from '../components/RiceCategories';
+import ExportStatsCard from './ExportStatsCard';
+import NutritionalCard from './NutritionalCard';
+import FeaturesBadge from './FeaturesBadge';
+import RiceCategories from './RiceCategories';
+import RiceExportSection from './RiceExportSection';
+import WhyChooseUs from './WhyChooseUs';
+import Certifications from './Certifications';
+import PremiumOrganicBasmati from './PremiumOrganicBasmati';
+import PopularProducts from './PopularProducts';
+import FeaturedServices from './FeaturedServices';
+import Testimonials from './Testimonials';
+import FAQSection from './FAQSection';
+import Footer from './Footer';
 
 const HeroSection = () => {
   return (
@@ -318,7 +327,10 @@ const HeroSection = () => {
 
         </div>
       </div>
+       
+          
     </section>
+    
   );
 };
 

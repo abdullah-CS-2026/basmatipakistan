@@ -71,11 +71,3 @@ body {
   background: #2d6a2d;
   border-radius: 3px;
 }
-
-.product-card:hover .product-overlay {
-  top: 0;
-}
-
-.product-card:not(:hover) .product-overlay {
-  top: -100%;
-}
