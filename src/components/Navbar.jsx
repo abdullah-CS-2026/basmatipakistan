@@ -29,40 +29,34 @@ const Navbar = () => {
       className="navbar navbar-expand-lg fixed-top"
       style={{
         backgroundColor: '#467302',
-        padding: '0.6rem 2rem',
+        padding: '0.55rem 2rem',
         zIndex: 1050,
+        minHeight: '78px',
         boxShadow: '0 2px 12px rgba(0,0,0,0.18)',
       }}
     >
-      <div className="container-fluid px-lg-4">
+      <div className="container-fluid px-lg-4 d-flex align-items-center">
         {/* Logo */}
-        <a className="navbar-brand d-flex align-items-center gap-2" href="#">
-          <img
-            src="logo_banasmati.jpg"
-            alt="BasmatiPak Logo"
-            style={{
-              height: '38px',
-              width: '38px',
-              borderRadius: '50%',
-              objectFit: 'cover',
-              border: '2px solid rgba(255,255,255,0.3)',
-            }}
-            onError={(e) => {
-              e.target.style.display = 'none';
-            }}
-          />
-          <span
-            style={{
-              color: '#fff',
-              fontFamily: "'Playfair Display', Georgia, serif",
-              fontSize: '1.35rem',
-              fontWeight: '700',
-              letterSpacing: '0.5px',
-            }}
-          >
-            Basmati<span style={{ color: '#a8e063', fontWeight: '900' }}>PAK</span>
-          </span>
-        </a>
+        <a
+  className="navbar-brand"
+  href="#"
+  style={{
+    display: 'flex',
+    alignItems: 'center',
+  }}
+>
+  <img
+    src="/logo_image.png"
+    alt="Logo"
+    style={{
+      width: '220px',
+      height: '60px',
+      objectFit: 'contain',
+      objectPosition: 'top',
+      display: 'block',
+    }}
+  />
+</a>
 
         {/* Toggler */}
         <button
@@ -76,7 +70,10 @@ const Navbar = () => {
         </button>
 
         {/* Nav Links */}
-        <div className="collapse navbar-collapse justify-content-between" id="navbarNav">
+        <div
+  className="collapse navbar-collapse justify-content-between align-items-center"
+  id="navbarNav"
+>
           <ul className="navbar-nav mx-auto gap-1">
             {navLinks.map((link) => (
               <li key={link.label} className={`nav-item ${link.dropdown ? 'dropdown' : ''}`}>
