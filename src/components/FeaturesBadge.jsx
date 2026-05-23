@@ -4,50 +4,77 @@ const FeaturesBadge = () => {
   return (
     <div
       style={{
-        background: 'rgba(45, 106, 45, 0.92)',
-        backdropFilter: 'blur(10px)',
-        borderRadius: '50px',
-        padding: '10px 18px',
-        boxShadow: '0 6px 20px rgba(0,0,0,0.2)',
-        display: 'inline-flex',
-        alignItems: 'center',
-        gap: '12px',
-        animation: 'floatCard 3s ease-in-out infinite 1s',
+        background: '#ffffff',
+        borderRadius: '60px',
+        padding: '14px 22px',
+        width: '320px',
+        boxShadow: '0 10px 30px rgba(0,0,0,0.2)',
       }}
     >
-      <div className="d-flex align-items-center gap-2">
-        <span style={{ fontSize: '10px', color: '#a8e063' }}>●</span>
-        <span
-          style={{
-            fontFamily: "'Nunito Sans', sans-serif",
-            fontSize: '0.72rem',
-            fontWeight: '700',
-            color: '#fff',
-            letterSpacing: '0.5px',
-          }}
-        >
-          Distinctive Aroma and Flavor
-        </span>
-      </div>
+      {/* First Feature */}
       <div
         style={{
-          width: '1px',
-          height: '14px',
-          background: 'rgba(255,255,255,0.3)',
+          display: 'flex',
+          alignItems: 'center',
+          gap: '10px',
+          marginBottom: '8px',
         }}
-      />
-      <div className="d-flex align-items-center gap-2">
-        <span style={{ fontSize: '10px', color: '#a8e063' }}>●</span>
+      >
+        <img
+          src="/ExportStatsCard/LongGrain.png"
+          alt="Long Grain"
+          style={{
+            width: '15px',
+            height: '15px',
+            objectFit: 'contain',
+            flexShrink: 0,
+          }}
+        />
+
         <span
           style={{
             fontFamily: "'Nunito Sans', sans-serif",
-            fontSize: '0.72rem',
+            fontSize: '12px',
             fontWeight: '700',
-            color: '#fff',
-            letterSpacing: '0.5px',
+            color: '#333',
+            letterSpacing: '0.2px',
+            lineHeight: '1.2',
           }}
         >
-          Long Grain and Fluffiness
+          DISTINCTIVE AROMA AND FLAVOR
+        </span>
+      </div>
+
+      {/* Second Feature */}
+      <div
+        style={{
+          display: 'flex',
+          alignItems: 'center',
+          gap: '10px',
+        }}
+      >
+        <img
+          src="/ExportStatsCard/LongGrain.png"
+          alt="Long Grain"
+          style={{
+            width: '15px',
+            height: '15px',
+            objectFit: 'contain',
+            flexShrink: 0,
+          }}
+        />
+
+        <span
+          style={{
+            fontFamily: "'Nunito Sans', sans-serif",
+            fontSize: '12px',
+            fontWeight: '700',
+            color: '#333',
+            letterSpacing: '0.2px',
+            lineHeight: '1.2',
+          }}
+        >
+          LONG GRAIN AND FLUFFINESS
         </span>
       </div>
     </div>

@@ -66,6 +66,7 @@ const HeroSection = () => {
         style={{
           position: 'relative',
           zIndex: 3,
+          marginTop:'120px'
         }}
       >
         <div className="row align-items-center">
@@ -252,8 +253,8 @@ const HeroSection = () => {
                   top: '8%',
                   left: '30%',
                   transform: 'translate(-50%, -50%)',
-                  width: '420px',
-                  height: '500px',
+                  width: '442px',
+                  height: '581px',
                   borderRadius: '30px',
                   overflow: 'hidden',
                   border: '1.5px solid rgba(255,255,255,0.12)',
@@ -301,8 +302,9 @@ const HeroSection = () => {
                 style={{
                   position: 'absolute',
                   top: '140px',
-                  right: '40px',
+                  right: '-15px',
                   zIndex: 10,
+                 
                 }}
               >
                 <NutritionalCard />
@@ -312,8 +314,8 @@ const HeroSection = () => {
               <div
                 style={{
                   position: 'absolute',
-                  bottom: '120px',
-                  left: '50%',
+                 bottom: '95px',
+left: '44%',
                   transform: 'translateX(-50%)',
                   zIndex: 10,
                   whiteSpace: 'nowrap',
