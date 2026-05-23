@@ -11,6 +11,7 @@ import FeaturedServices from '../components/FeaturedServices';
 import Testimonials from '../components/Testimonials';
 import FAQSection from '../components/FAQSection';
 import Footer from '../components/Footer';
+import ExportingCountries from '../components/ExportingCountries';
 
 const HomePage = () => {
   return (
@@ -22,6 +23,7 @@ const HomePage = () => {
       <PremiumOrganicBasmati />
       <PopularProducts />
       <FeaturedServices />
+      <ExportingCountries/>
       <Testimonials />
       <FAQSection />
       <Footer />
