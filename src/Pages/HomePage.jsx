@@ -12,6 +12,7 @@ import Testimonials from '../components/Testimonials';
 import FAQSection from '../components/FAQSection';
 import Footer from '../components/Footer';
 import ExportingCountries from '../components/ExportingCountries';
+import ArticleResources from '../components/ArticleResources';
 
 const HomePage = () => {
   return (
@@ -24,6 +25,7 @@ const HomePage = () => {
       <PopularProducts />
       <FeaturedServices />
       <ExportingCountries/>
+      <ArticleResources/>
       <Testimonials />
       <FAQSection />
       <Footer />
