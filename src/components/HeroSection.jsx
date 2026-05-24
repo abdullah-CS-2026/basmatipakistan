@@ -1,4 +1,5 @@
 import React from 'react';
+import '../index.css';
 import ExportStatsCard from './ExportStatsCard';
 import NutritionalCard from './NutritionalCard';
 import FeaturesBadge from './FeaturesBadge';
@@ -80,47 +81,13 @@ const HeroSection = () => {
               }}
             >
 
-              {/* Premium Badge */}
-              <div
-                className="d-inline-flex align-items-center gap-2 mb-3"
-                style={{
-                  background: 'rgba(168,224,99,0.12)',
-                  border: '1px solid rgba(168,224,99,0.35)',
-                  borderRadius: '50px',
-                  padding: '6px 16px',
-                  backdropFilter: 'blur(6px)',
-                }}
-              >
-                <span
-                  style={{
-                    width: '6px',
-                    height: '6px',
-                    borderRadius: '50%',
-                    background: '#a8e063',
-                    display: 'inline-block',
-                  }}
-                />
-
-                <span
-                  style={{
-                    fontFamily: "'Nunito Sans', sans-serif",
-                    fontSize: '0.78rem',
-                    fontWeight: '700',
-                    color: '#a8e063',
-                    letterSpacing: '1px',
-                    textTransform: 'uppercase',
-                  }}
-                >
-                  Premium Quality
-                </span>
-              </div>
+             
 
               {/* Heading */}
               <h1
                 style={{
-                  fontFamily: "'Playfair Display', Georgia, serif",
-                  fontSize: 'clamp(2.7rem, 5vw, 4.2rem)',
-                  fontWeight: '800',
+                  fontSize: '38px',
+                  fontWeight: '520',
                   color: '#ffffff',
                   lineHeight: '1.12',
                   marginBottom: '1.4rem',
@@ -128,15 +95,14 @@ const HeroSection = () => {
                 }}
               >
                 Top Basmati{' '}
-                <span style={{ color: '#a8e063' }}>Exporter</span>
+                Exporter in
                 <br />
-                in Pakistan
+                 Pakistan
               </h1>
 
               {/* Description */}
               <p
                 style={{
-                  fontFamily: "'Nunito Sans', sans-serif",
                   fontSize: '1.02rem',
                   fontWeight: '400',
                   color: 'rgba(255,255,255,0.74)',
@@ -161,7 +127,6 @@ const HeroSection = () => {
                     background: 'transparent',
                     border: '1.5px solid rgba(255,255,255,0.5)',
                     color: '#fff',
-                    fontFamily: "'Nunito Sans', sans-serif",
                     fontWeight: '700',
                     fontSize: '0.92rem',
                     borderRadius: '50px',
@@ -189,12 +154,12 @@ const HeroSection = () => {
                   href="#"
                   className="btn d-flex align-items-center gap-2"
                   style={{
-                    background: '#5c8f0f',
+                    background: '#467402',
                     border: '1.5px solid #5c8f0f',
                     color: '#ffffff',
-                    fontFamily: "'Nunito Sans', sans-serif",
+                    
                     fontWeight: '700',
-                    fontSize: '0.92rem',
+                    fontSize: '18px',
                     borderRadius: '50px',
                     padding: '0.75rem 1.8rem',
                     textDecoration: 'none',
@@ -211,14 +176,15 @@ const HeroSection = () => {
                     e.currentTarget.style.transform = 'translateY(0)';
                   }}
                 >
-                  <span
-                    style={{
-                      color: '#ffffff',
-                      fontSize: '1rem',
-                    }}
-                  >
-                    📞
-                  </span>
+                 <span
+  style={{
+    fontSize: '1rem',
+    filter: 'brightness(0) invert(1)',
+    display: 'inline-block',
+  }}
+>
+  📞
+</span>
 
                   Contact Us
                 </a>

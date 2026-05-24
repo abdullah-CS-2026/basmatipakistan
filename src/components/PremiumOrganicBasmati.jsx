@@ -20,17 +20,17 @@ const PremiumOrganicBasmati = () => {
         <div className="row align-items-center g-5">
 
           {/* LEFT CONTENT */}
-          <div className="col-lg-7">
+          <div className="col-lg-6">
 
             {/* Heading */}
             <h2
               style={{
                 color: '#ffffff',
-                fontSize: '3.4rem',
-                fontWeight: '700',
+                fontSize: '42px',
+                fontWeight: '600',
                 lineHeight: '1.15',
                 marginBottom: '28px',
-                fontFamily: "'Nunito Sans', sans-serif",
+                fontFamily: "'Inter', sans-serif",
                 maxWidth: '650px',
               }}
             >
@@ -43,12 +43,14 @@ const PremiumOrganicBasmati = () => {
             <p
               style={{
                 color: 'rgba(255,255,255,0.88)',
-                fontSize: '1.08rem',
-                lineHeight: '2',
+                fontSize: '16px',
+                lineHeight: '1.5',
                 marginBottom: '42px',
-                fontFamily: "'Nunito Sans', sans-serif",
+                 fontFamily: "'Inter', sans-serif",
                 maxWidth: '640px',
                 textAlign: 'justify',
+                fontWeight: '500',
+                textAlign:'justify',
               }}
             >
               Pakistan is renowned for producing some of the finest Organic
@@ -123,7 +125,7 @@ const PremiumOrganicBasmati = () => {
                       color: '#ffffff',
                       fontSize: '1.08rem',
                       fontWeight: '500',
-                      fontFamily: "'Nunito Sans', sans-serif",
+                       fontFamily: "'Inter', sans-serif",
                     }}
                   >
                     {feature}
@@ -148,7 +150,7 @@ const PremiumOrganicBasmati = () => {
                 textDecoration: 'none',
                 fontSize: '1.05rem',
                 fontWeight: '700',
-                fontFamily: "'Nunito Sans', sans-serif",
+                 fontFamily: "'Inter', sans-serif",
                 transition: '0.3s ease',
                 boxShadow: '0 10px 24px rgba(0,0,0,0.18)',
               }}
@@ -159,42 +161,49 @@ const PremiumOrganicBasmati = () => {
           </div>
 
           {/* RIGHT IMAGE */}
-          <div className="col-lg-5">
+          <div className="col-lg-6 d-flex" style={{
+   
+    marginBottom: '15px',
+  }} >
 
-            <div
-              style={{
-                position: 'relative',
-                display: 'flex',
-                justifyContent: 'center',
-              }}
-            >
+  <div
+    style={{
+      position: 'relative',
+      display: 'flex',
+      justifyContent: 'center',
+      width: '100%',
+      height: '100%',
+    }}
+  >
 
-              {/* Image Frame */}
-              <div
-                style={{
-                  width: '100%',
-                  maxWidth: '420px',
-                  borderRadius: '22px',
-                  overflow: 'hidden',
-                  border: '4px solid rgba(255,255,255,0.12)',
-                  boxShadow: '0 24px 60px rgba(0,0,0,0.28)',
-                }}
-              >
-                <img
-                  src="/Premium_Organic_Basmati/image1.jpg"
-                  alt="Premium Organic Basmati"
-                  style={{
-                    width: '100%',
-                    height: '640px',
-                    objectFit: 'cover',
-                    display: 'block',
-                  }}
-                />
-              </div>
+    {/* Image Frame */}
+    <div
+      style={{
+        width: '100%',
+        maxWidth: '100%',
+        height: '100%',
+        borderRadius: '22px',
+        overflow: 'hidden',
+        border: '4px solid rgba(255,255,255,0.12)',
+        boxShadow: '0 24px 60px rgba(0,0,0,0.28)',
+      }}
+    >
+      <img
+        src="/Premium_Organic_Basmati/image1.jpg"
+        alt="Premium Organic Basmati"
+        style={{
+          width: '100%',
+          height: '100%',
+          minHeight: '100%',
+          objectFit: 'cover',
+          display: 'block',
+        }}
+      />
+    </div>
 
-            </div>
+  </div>
 
-          </div>
+</div>
 
         </div>
       </div>

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import '../index.css';
 const Navbar = () => {
   const [openDropdown, setOpenDropdown] = useState(null);
 
@@ -24,6 +24,18 @@ const Navbar = () => {
     { label: 'Blog', dropdown: null },
   ];
 
+  const navTextStyle = {
+    color: 'rgba(252, 255, 255, 1)',
+    fontFamily: 'Inter, sans-serif',
+    fontSize: '16px',
+    fontWeight: '600',
+    lineHeight: '16px',
+    letterSpacing: '0px',
+    padding: '0.5rem 0.85rem',
+    borderRadius: '6px',
+    transition: 'background 0.2s',
+  };
+
   return (
     <nav
       className="navbar navbar-expand-lg fixed-top"
@@ -33,32 +45,34 @@ const Navbar = () => {
         zIndex: 1050,
         minHeight: '78px',
         boxShadow: '0 2px 12px rgba(0,0,0,0.18)',
+        width:"100%",
       }}
     >
-      <div className="container-fluid px-lg-4 d-flex align-items-center">
+      <div className="container-fluid px-lg-4 d-flex align-items-center width:1096px ">
+        
         {/* Logo */}
         <a
-  className="navbar-brand"
-  href="#"
-  style={{
-    display: 'flex',
-    alignItems: 'center',
-  }}
->
-  <img
-    src="/logo_image.png"
-    alt="Logo"
-    style={{
-      width: '220px',
-      height: '60px',
-      objectFit: 'contain',
-      objectPosition: 'top',
-      display: 'block',
-    }}
-  />
-</a>
+          className="navbar-brand"
+          href="#"
+          style={{
+            display: 'flex',
+            alignItems: 'center',
+          }}
+        >
+          <img
+            src="/logo_image.png"
+            alt="Logo"
+            style={{
+              width: '220px',
+              height: '60px',
+              objectFit: 'contain',
+              objectPosition: 'top',
+              display: 'block',
+            }}
+          />
+        </a>
 
-        {/* Toggler */}
+        {/* Mobile Toggler */}
         <button
           className="navbar-toggler border-0"
           type="button"
@@ -66,38 +80,36 @@ const Navbar = () => {
           data-bs-target="#navbarNav"
           style={{ color: '#fff' }}
         >
-          <span className="navbar-toggler-icon" style={{ filter: 'invert(1)' }}></span>
+          <span
+            className="navbar-toggler-icon"
+            style={{ filter: 'invert(1)' }}
+          ></span>
         </button>
 
         {/* Nav Links */}
         <div
-  className="collapse navbar-collapse justify-content-between align-items-center"
-  id="navbarNav"
->
+          className="collapse navbar-collapse justify-content-between align-items-center width:100% width:1096px"
+          id="navbarNav"
+        >
           <ul className="navbar-nav mx-auto gap-1">
             {navLinks.map((link) => (
-              <li key={link.label} className={`nav-item ${link.dropdown ? 'dropdown' : ''}`}>
+              <li
+                key={link.label}
+                className={`nav-item ${link.dropdown ? 'dropdown' : ''}`}
+              >
                 {link.dropdown ? (
                   <>
                     <a
                       className="nav-link dropdown-toggle"
                       href="#"
-                      style={{
-                        color: 'rgba(255,255,255,0.92)',
-                        fontFamily: "'Nunito Sans', sans-serif",
-                        fontWeight: '600',
-                        fontSize: '0.9rem',
-                        letterSpacing: '0.3px',
-                        padding: '0.5rem 0.85rem',
-                        borderRadius: '6px',
-                        transition: 'background 0.2s',
-                      }}
+                      style={navTextStyle}
                       onClick={(e) => {
                         e.preventDefault();
                         toggleDropdown(link.label);
                       }}
                       onMouseEnter={(e) =>
-                        (e.target.style.background = 'rgba(255,255,255,0.12)')
+                        (e.target.style.background =
+                          'rgba(255,255,255,0.12)')
                       }
                       onMouseLeave={(e) =>
                         (e.target.style.background = 'transparent')
@@ -105,8 +117,11 @@ const Navbar = () => {
                     >
                       {link.label}
                     </a>
+
                     <ul
-                      className={`dropdown-menu ${openDropdown === link.label ? 'show' : ''}`}
+                      className={`dropdown-menu ${
+                        openDropdown === link.label ? 'show' : ''
+                      }`}
                       style={{
                         backgroundColor: '#1e4d1e',
                         border: 'none',
@@ -122,16 +137,12 @@ const Navbar = () => {
                             className="dropdown-item"
                             href="#"
                             style={{
-                              color: 'rgba(255,255,255,0.88)',
-                              fontFamily: "'Nunito Sans', sans-serif",
-                              fontSize: '0.87rem',
-                              fontWeight: '500',
-                              borderRadius: '6px',
+                              ...navTextStyle,
                               padding: '0.45rem 1rem',
-                              transition: 'background 0.2s',
                             }}
                             onMouseEnter={(e) =>
-                              (e.target.style.background = 'rgba(168,224,99,0.18)')
+                              (e.target.style.background =
+                                'rgba(168,224,99,0.18)')
                             }
                             onMouseLeave={(e) =>
                               (e.target.style.background = 'transparent')
@@ -147,19 +158,14 @@ const Navbar = () => {
                   <a
                     className="nav-link"
                     href="#"
-                    style={{
-                      color: 'rgba(255,255,255,0.92)',
-                      fontFamily: "'Nunito Sans', sans-serif",
-                      fontWeight: '600',
-                      fontSize: '0.9rem',
-                      padding: '0.5rem 0.85rem',
-                      borderRadius: '6px',
-                      transition: 'background 0.2s',
-                    }}
+                    style={navTextStyle}
                     onMouseEnter={(e) =>
-                      (e.target.style.background = 'rgba(255,255,255,0.12)')
+                      (e.target.style.background =
+                        'rgba(255,255,255,0.12)')
                     }
-                    onMouseLeave={(e) => (e.target.style.background = 'transparent')}
+                    onMouseLeave={(e) =>
+                      (e.target.style.background = 'transparent')
+                    }
                   >
                     {link.label}
                   </a>
@@ -174,16 +180,20 @@ const Navbar = () => {
             className="btn d-flex align-items-center gap-2"
             style={{
               backgroundColor: '#fff',
-              color: '#2d6a2d',
-              fontFamily: "'Nunito Sans', sans-serif",
+              color: '#5d7e2a',
+              fontFamily: 'Inter, sans-serif',
               fontWeight: '700',
-              fontSize: '0.88rem',
+              fontSize: '16px',
               borderRadius: '50px',
-              padding: '0.5rem 1.3rem',
-              letterSpacing: '0.3px',
+              padding: '0.25rem 1rem',
               boxShadow: '0 2px 10px rgba(0,0,0,0.15)',
               transition: 'all 0.25s',
               textDecoration: 'none',
+              marginRight: '-20px',
+              marginLeft: '25px',
+              
+             
+               
             }}
             onMouseEnter={(e) => {
               e.currentTarget.style.backgroundColor = '#a8e063';
@@ -194,22 +204,27 @@ const Navbar = () => {
               e.currentTarget.style.color = '#2d6a2d';
             }}
           >
+            
             Get a Quote
             <span
-              style={{
-                display: 'inline-flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                background: '#2d6a2d',
-                color: '#fff',
-                borderRadius: '50%',
-                width: '22px',
-                height: '22px',
-                fontSize: '12px',
-              }}
-            >
-              &#9993;
-            </span>
+  style={{
+    display: 'inline-flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    background: '#92ba55',
+    color: 'rgb(255, 255, 255)',
+    borderRadius: '50%',
+    width: '38px',
+    height: '38px',
+    fontFamily: 'Inter, sans-serif',
+    fontSize: '16px',
+    fontWeight: '600',
+    lineHeight: '32px',
+     
+  }}
+>
+  &#9993;
+</span>
           </a>
         </div>
       </div>

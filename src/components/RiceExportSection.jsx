@@ -129,7 +129,7 @@ const RiceExportSection = () => {
                 fontSize: '1.2rem',
                 fontWeight: '500',
                 marginBottom: '18px',
-                fontFamily: "'Nunito Sans', sans-serif",
+                
               }}
             >
               From Sourcing to Delivery
@@ -143,7 +143,7 @@ const RiceExportSection = () => {
                 lineHeight: '1.2',
                 color: '#4d7c0f',
                 marginBottom: '28px',
-                fontFamily: "'Nunito Sans', sans-serif",
+                
               }}
             >
               Rice Exports at Your Doorstep
@@ -156,7 +156,7 @@ const RiceExportSection = () => {
                 fontSize: '1.28rem',
                 lineHeight: '1.8',
                 marginBottom: '40px',
-                fontFamily: "'Nunito Sans', sans-serif",
+                
               }}
             >
               We distinguish ourselves as one of the top basmati exporter
@@ -204,7 +204,7 @@ const RiceExportSection = () => {
                         fontSize: '1.35rem',
                         fontWeight: '500',
                         color: '#4d7c0f',
-                        fontFamily: "'Nunito Sans', sans-serif",
+                        
                       }}
                     >
                       {step}
@@ -237,7 +237,7 @@ const RiceExportSection = () => {
                   fontSize: '1.15rem',
                   fontWeight: '600',
                   textDecoration: 'none',
-                  fontFamily: "'Nunito Sans', sans-serif",
+                  
                   transition: '0.3s ease',
                   display: 'inline-flex',
                   alignItems: 'center',
