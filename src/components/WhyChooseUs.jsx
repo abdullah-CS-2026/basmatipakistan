@@ -286,8 +286,7 @@ const WhyChooseUs = () => {
   return (
     <section
       style={{
-        background:
-          'linear-gradient(180deg, #f7faf7 0%, #eef6ee 100%)',
+       
         padding: '6rem 0 5rem',
         position: 'relative',
         overflow: 'hidden',

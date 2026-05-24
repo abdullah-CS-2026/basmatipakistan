@@ -24,9 +24,9 @@ const HomePage = () => {
       <PremiumOrganicBasmati />
       <PopularProducts />
       <FeaturedServices />
+      <Testimonials />
       <ExportingCountries/>
       <ArticleResources/>
-      <Testimonials />
       <FAQSection />
       <Footer />
     </>

@@ -24,7 +24,7 @@ const ArticleResources = () => {
     <section
       style={{
         padding: '110px 0',
-        background: '#f5f5f5',
+        background: '#ffffff',
       }}
     >
       <div className="container">

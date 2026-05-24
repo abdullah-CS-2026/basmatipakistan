@@ -55,7 +55,7 @@ const HeroSection = () => {
           left: 0,
           width: '100%',
           height: '180px',
-          background: '#f5f5f5',
+          background: '#ffffff',
           clipPath: 'polygon(0 100%, 100% 72%, 100% 100%, 0 100%)',
           zIndex: 2,
         }}

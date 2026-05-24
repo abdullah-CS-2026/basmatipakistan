@@ -40,7 +40,7 @@ const Certifications = () => {
   return (
     <section
       style={{
-        backgroundColor: '#f5f5f5',
+        backgroundColor: '#ffffff',
         padding: '110px 0',
       }}
     >
@@ -73,7 +73,7 @@ const Certifications = () => {
                 style={{
                   minHeight: '150px',
                   padding: '25px 10px',
-                  background: '#f5f5f5',
+                  background: '#ffffff',
                   transition: 'all 0.3s ease',
                 }}
               >

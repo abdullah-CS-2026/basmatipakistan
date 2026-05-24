@@ -14,7 +14,7 @@ const RiceExportSection = () => {
     <section
       style={{
         padding: '110px 0',
-        background: '#f8f8f8',
+        background: '#ffffff',
       }}
     >
       <div className="container">
@@ -126,7 +126,7 @@ const RiceExportSection = () => {
             <p
               style={{
                 color: '#5d8d16',
-                fontSize: '1.2rem',
+                fontSize: '0.45 rem',
                 fontWeight: '500',
                 marginBottom: '18px',
                 
@@ -138,8 +138,8 @@ const RiceExportSection = () => {
             {/* Main Heading */}
             <h2
               style={{
-                fontSize: '3.5rem',
-                fontWeight: '700',
+                fontSize: '36px',
+                fontWeight: '600',
                 lineHeight: '1.2',
                 color: '#4d7c0f',
                 marginBottom: '28px',
@@ -153,8 +153,9 @@ const RiceExportSection = () => {
             <p
               style={{
                 color: '#6b7280',
-                fontSize: '1.28rem',
-                lineHeight: '1.8',
+                fontSize: '1.1rem',
+                fontWeight: '400',
+                lineHeight: '1.4',
                 marginBottom: '40px',
                 
               }}
@@ -176,33 +177,33 @@ const RiceExportSection = () => {
 
                     {/* Icon */}
                     <div
-                      style={{
-                        width: '45px',
-                        height: '40px',
-                        borderRadius: '50%',
-                        background:
-                          index % 2 === 0
-                            ? 'rgba(164,198,57,0.18)'
-                            : 'rgba(255,193,7,0.18)',
-                        display: 'flex',
-                        alignItems: 'center',
-                        justifyContent: 'center',
-                        color:
-                          index % 2 === 0
-                            ? '#7ba414'
-                            : '#f59e0b',
-                        fontWeight: '700',
-                        fontSize: '1rem',
-                      }}
-                    >
-                      ✓
-                    </div>
+  style={{
+    width: '23px',
+    height: '23px',
+    borderRadius: '50%',
+    background:
+      index % 2 === 0
+        ? 'rgba(164,198,57,0.18)'
+        : 'rgba(255,193,7,0.18)',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    color:
+      index % 2 === 0
+        ? '#7ba414'
+        : '#f59e0b',
+    fontWeight: '700',
+    fontSize: '1rem',
+  }}
+>
+  ✓
+</div>
 
                     {/* Text */}
                     <span
                       style={{
-                        fontSize: '1.35rem',
-                        fontWeight: '500',
+                        fontSize: '1.02rem',
+                        fontWeight: '600',
                         color: '#4d7c0f',
                         
                       }}
@@ -230,7 +231,7 @@ const RiceExportSection = () => {
               <a
                 href="#"
                 style={{
-                  background: '#7ba414',
+                  background: '#759642',
                   color: '#fff',
                   padding: '18px 42px',
                   borderRadius: '50px',

@@ -10,7 +10,7 @@ const Footer = () => {
         position: 'relative',
         overflow: 'hidden',
         marginTop: '120px',
-        clipPath: 'polygon(0 8%, 100% 0%, 100% 100%, 0% 100%)',
+        clipPath: 'polygon(0 0%, 100% 8%, 100% 100%, 0% 100%)',
       }}
     >
 
@@ -36,7 +36,7 @@ const Footer = () => {
               borderRadius: '50px',
               fontSize: '0.9rem',
               fontWeight: '600',
-              fontFamily: "'Nunito Sans', sans-serif",
+              fontFamily: "'Inter', sans-serif",
             }}
           >
             🕐 We are Ready 24 Hours
@@ -47,11 +47,11 @@ const Footer = () => {
         {/* Heading */}
         <h2
           style={{
-            fontSize: '3.5rem',
-            fontWeight: '700',
+            fontSize: '2.3rem',
+            fontWeight: 'bold',
             lineHeight: '1.3',
             marginBottom: '24px',
-            fontFamily: "'Nunito Sans', sans-serif",
+            fontFamily: "'Inter', sans-serif",
             maxWidth: '850px',
             marginInline: 'auto',
           }}
@@ -66,7 +66,7 @@ const Footer = () => {
             fontSize: '1.08rem',
             color: 'rgba(255,255,255,0.82)',
             marginBottom: '42px',
-            fontFamily: "'Nunito Sans', sans-serif",
+            fontFamily: "'Inter', sans-serif",
           }}
         >
           We look forward to assisting you with your rice purchase
@@ -80,14 +80,14 @@ const Footer = () => {
             display: 'inline-flex',
             alignItems: 'center',
             gap: '14px',
-            background: '#87a82f',
+            background: '#759642',
             color: '#ffffff',
-            padding: '18px 34px',
+            padding: '10px 18px',
             borderRadius: '50px',
             textDecoration: 'none',
             fontWeight: '700',
             fontSize: '1rem',
-            fontFamily: "'Nunito Sans', sans-serif",
+            fontFamily: "'Inter', sans-serif",
             transition: '0.3s ease',
           }}
         >
@@ -141,7 +141,7 @@ const Footer = () => {
                 lineHeight: '1.9',
                 color: 'rgba(255,255,255,0.88)',
                 fontSize: '1rem',
-                fontFamily: "'Nunito Sans', sans-serif",
+                fontFamily: "'Inter', sans-serif",
               }}
             >
               Your Trusted rice exporter committed to the best quality and
@@ -155,9 +155,9 @@ const Footer = () => {
 
             <h5
               style={{
-                fontWeight: '700',
+                fontWeight: '600',
                 marginBottom: '28px',
-                fontFamily: "'Nunito Sans', sans-serif",
+                fontFamily: "'Inter', sans-serif",
               }}
             >
               Useful Links
@@ -175,9 +175,10 @@ const Footer = () => {
                   key={item}
                   href="#"
                   style={{
+                    fontSixe:"1rem",
                     color: 'rgba(255,255,255,0.82)',
                     textDecoration: 'none',
-                    fontFamily: "'Nunito Sans', sans-serif",
+                    fontFamily: "'Inter', sans-serif",
                     transition: '0.3s',
                   }}
                 >
@@ -190,13 +191,14 @@ const Footer = () => {
           </div>
 
           {/* Support */}
-          <div className="col-lg-2">
+          <div className="col-lg-2" style={{paddingLeft: '40px'}}>
 
             <h5
               style={{
-                fontWeight: '700',
+                fontSize: '1.1rem',
+                fontWeight: '600',
                 marginBottom: '28px',
-                fontFamily: "'Nunito Sans', sans-serif",
+                fontFamily: "'Inter', sans-serif",
               }}
             >
               Support
@@ -216,7 +218,7 @@ const Footer = () => {
                   style={{
                     color: 'rgba(255,255,255,0.82)',
                     textDecoration: 'none',
-                    fontFamily: "'Nunito Sans', sans-serif",
+                    fontFamily: "'Inter', sans-serif",
                     transition: '0.3s',
                   }}
                 >
@@ -229,13 +231,15 @@ const Footer = () => {
           </div>
 
           {/* Contact */}
-          <div className="col-lg-4">
+          <div className="col-lg-4 " style={{
+    paddingLeft: '110px',
+  }}>
 
             <h5
               style={{
-                fontWeight: '700',
+                fontWeight: '600',
                 marginBottom: '28px',
-                fontFamily: "'Nunito Sans', sans-serif",
+                fontFamily: "'Inter', sans-serif",
               }}
             >
               Get in Touch!
@@ -244,16 +248,18 @@ const Footer = () => {
             <div
               style={{
                 display: 'flex',
+                fontSize:'1.02rem',
+                fontWeight: '600',
                 flexDirection: 'column',
                 gap: '18px',
                 color: 'rgba(255,255,255,0.88)',
-                fontFamily: "'Nunito Sans', sans-serif",
+                fontFamily: "'Inter', sans-serif",
                 lineHeight: '1.8',
               }}
             >
 
               <div>
-                <strong>sales@basmatipakistan.com</strong>
+                <p>sales@basmatipakistan.com</p>
               </div>
 
               <div>
@@ -294,10 +300,10 @@ const Footer = () => {
                 margin: 0,
                 color: 'rgba(255,255,255,0.75)',
                 fontSize: '0.95rem',
-                fontFamily: "'Nunito Sans', sans-serif",
+                fontFamily: "'Inter', sans-serif",
               }}
             >
-              © Copyright 2024 Crafted by WebsCare. All rights reserved.
+              © Copyright 2024 Crafted by <span style={{color:'#2C4703'}}>WebsCare</span>. All rights reserved.
             </p>
 
             {/* Social */}
