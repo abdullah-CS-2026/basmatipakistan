@@ -64,21 +64,22 @@ const FAQSection = () => {
     <section
       style={{
         background: '#ffffff',
-        padding: '110px 0',
+        padding: '55px 0 40px',
       }}
     >
       <div className="container">
 
         {/* Heading */}
-        <div className="text-center mb-5">
+        <div className="text-center mb-4">
 
           <h2
             style={{
-              fontSize: '4rem',
-              fontWeight: '700',
+              fontSize: '48px',
+              fontWeight: '600',
+              lineHeight: '1.1',
               color: '#4d7c0f',
-              fontFamily: "'Nunito Sans', sans-serif",
-              marginBottom: '20px',
+              fontFamily: "'Inter', sans-serif",
+              marginBottom: '10px',
             }}
           >
             Frequently Asked Questions
@@ -87,7 +88,7 @@ const FAQSection = () => {
         </div>
 
         {/* FAQ Grid */}
-        <div className="row g-4">
+        <div className="row g-3">
 
           {faqData.map((item, index) => (
             <div
@@ -96,14 +97,16 @@ const FAQSection = () => {
             >
 
               <div
-                style={{
-                  border: '1px solid #dfe3ea',
-                  borderRadius: '14px',
-                  background: '#ffffff',
-                  overflow: 'hidden',
-                  transition: '0.3s ease',
-                }}
-              >
+  style={{
+    border: '1px solid #e5e7eb',
+    borderRadius: '16px',
+    background: '#ffffff',
+    transition: 'all 0.3s ease',
+    overflow: 'hidden',
+    height: '100%',
+    boxShadow: '0 2px 8px rgba(0,0,0,0.03)',
+  }}
+>
 
                 {/* Question */}
                 <button
@@ -112,7 +115,7 @@ const FAQSection = () => {
                     width: '100%',
                     background: '#ffffff',
                     border: 'none',
-                    padding: '30px 28px',
+                    padding: '20px 22px',
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'space-between',
@@ -122,12 +125,12 @@ const FAQSection = () => {
 
                   <span
                     style={{
-                      fontSize: '1.65rem',
-                      fontWeight: '700',
+                      fontSize: '20px',
+                      fontWeight: '600',
                       color: '#557d07',
                       textAlign: 'left',
                       lineHeight: '1.5',
-                      fontFamily: "'Nunito Sans', sans-serif",
+                      fontFamily: "'Inter', sans-serif",
                     }}
                   >
                     {item.question}
@@ -136,7 +139,7 @@ const FAQSection = () => {
                   <span
                     style={{
                       color: '#557d07',
-                      fontSize: '1.7rem',
+                      fontSize: '18px',
                       marginLeft: '20px',
                       transition: '0.3s ease',
                       transform:
@@ -159,18 +162,19 @@ const FAQSection = () => {
                         : '0px',
                     overflow: 'hidden',
                     transition: 'all 0.4s ease',
-                    background: '#fafafa',
+                    background: '#ffffff',
+borderTop: '1px solid #f1f5f9',
                   }}
                 >
 
                   <p
                     style={{
-                      padding: '0 28px 28px',
+                      padding: '0 22px 22px',
                       margin: 0,
                       color: '#6b7280',
-                      fontSize: '1.08rem',
-                      lineHeight: '1.9',
-                      fontFamily: "'Nunito Sans', sans-serif",
+                      fontSize: '14px',
+                      lineHeight: '1.7',
+                      fontFamily: "'Inter', sans-serif",
                     }}
                   >
                     {item.answer}

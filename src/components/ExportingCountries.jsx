@@ -71,7 +71,7 @@ const ExportingCountries = () => {
       ref={sectionRef}
       style={{
         padding: '120px 0',
-        background: '#f5f5f5',
+        background: '#ffffff',
         overflow: 'hidden',
       }}
     >
@@ -86,11 +86,11 @@ const ExportingCountries = () => {
         >
           <h2
             style={{
-              fontSize: '64px',
-              fontWeight: '800',
+              fontSize: '48px',
+              fontWeight: 'bold',
               color: '#5b7f10',
               marginBottom: '20px',
-              fontFamily: "'Nunito Sans', sans-serif",
+              
             }}
           >
             Top Exporting Countries
@@ -104,7 +104,9 @@ const ExportingCountries = () => {
 
             <p
               style={{
-                fontSize: '20px',
+                fontSize: '16px',
+                fontWeight: '400',
+                textAlign:'justify',
                 lineHeight: '2',
                 color: '#4f566b',
                 maxWidth: '600px',
@@ -136,7 +138,7 @@ const ExportingCountries = () => {
               <div
                 style={{
                   display: 'flex',
-                  gap: '5px',
+                  gap: '7px',
                   width: 'max-content',
                   animation: startAnimation
                     ? 'smoothSlider 10s linear infinite'

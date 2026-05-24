@@ -38,7 +38,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className="navbar navbar-expand-lg fixed-top"
+      className="navbar navbar-expand-lg"
       style={{
         backgroundColor: '#467302',
         padding: '0.55rem 2rem',
